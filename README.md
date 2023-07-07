@@ -1,8 +1,9 @@
 ### Overview
 The deployment consists of two major components:
 
-## MongoDB Database
-Mongo-Express (a web-based admin interface for MongoDB)
+- MongoDB Database<b>
+- Mongo-Express (a web-based admin interface for MongoDB)<b>
+  
 Each component is deployed using Kubernetes resources such as ConfigMaps, Secrets, Deployments and Services.
 
 ## Prerequisites
