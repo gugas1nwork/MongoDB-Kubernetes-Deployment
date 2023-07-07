@@ -41,10 +41,13 @@ The Service configuration which exposes the MongoDB deployment to the network, e
 ## Deployment Instructions
 
 1. Clone this repository.<b>
-2. Start the Minikube cluster with the command "**minikube start**".<b>
-3. Apply the Kubernetes configuration files with kubectl apply -f <filename>.<b>
+2. Start the Minikube cluster with the command:
+   
+```bash
+minikube start
+```
 
-The commands for deployment are as follows:
+3. The commands for deployment are as follows:
 
 ```bash
 kubectl apply -f mongo-configmap.yaml
