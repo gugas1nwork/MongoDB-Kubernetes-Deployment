@@ -1,4 +1,4 @@
-### Overview
+# Overview
 The deployment consists of two major components:
 
 - MongoDB Database<b>
@@ -14,11 +14,11 @@ Each component is deployed using Kubernetes resources such as ConfigMaps, Secret
   
 The repository contains the following Kubernetes configuration files to deploy a MongoDB database and its web-based admin interface, Mongo-Express.
 
-# mongo-configmap.yaml
+### mongo-configmap.yaml
 
 This file holds the configuration map used in the MongoDB and Mongo-Express deployments. It contains the database URL which is utilized by Mongo-Express to connect to the MongoDB database.
 
-# mongo-express.yaml
+### mongo-express.yaml
 
 This is a two-part YAML file which includes:
 
@@ -26,11 +26,11 @@ The Deployment configuration for Mongo-Express. It references the MongoDB connec
 
 The Service configuration to expose the Mongo-Express deployment to the network. It utilizes the LoadBalancer service type to make the service accessible outside of the Kubernetes cluster.
 
-# mongo-secret.yaml
+### mongo-secret.yaml
 
 This file holds the Secrets used for the MongoDB deployment. It contains the base64 encoded MongoDB admin username and password, which are used by both the MongoDB and Mongo-Express deployments.
 
-# mongodb.yaml
+### mongodb.yaml
 
 This is also a two-part YAML file which includes:
 
